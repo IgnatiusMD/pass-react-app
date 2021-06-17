@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter,
   Route,
   Switch,
-  Link,
   NavLink,
-  useParams,
 } from "react-router-dom";
 import PasswordTablePage from "./Pages/PasswordTablePage";
 
@@ -19,7 +17,7 @@ let defaultPasswordList = [
 ];
 
 function App(props) {
-  const [passwordList, setPasswordList] = useState(defaultPasswordList);
+  useState(defaultPasswordList);
   return (
     <>
       {props.user.name}
